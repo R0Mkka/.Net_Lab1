@@ -1,0 +1,11 @@
+﻿<p>Account component!</p>
+
+<h3>Книги</h3>
+
+<ul class="book-list">
+    <li class="book" *ngFor="let book of (booksStream | async)">
+        <div>Название: {{ book.name }}</div>
+        <div>Автор: {{ book.author }}</div>
+        <div>Количество страниц: {{ book.pagesAmount }}</div>
+    </li>
+</ul>
